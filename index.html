@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<title>Ryan Wade Development</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    .fab {
+        margin-right: 25px;
+    }
+
+    img {
+        height: 174px;
+    }
+
+    .w3-third {
+        min-height: 286px;
+        max-height: 286.5px;
+        margin-bottom: 10px;
+
+    }
+
+    p {
+        word-wrap: break-word;
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+
+            <h4><b>PORTFOLIO</b></h4>
+            <p class="w3-text-grey">RYAN WADE</p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+            <a href="#aboutMe" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1 style="text-decoration: underline"><b>My Portfolio</b></h1>
+
+            </div>
+        </header>
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container">
+                <img src="img/os-info.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Ocean Springs Information Page</b></p>
+                    <p>Information on various restaurants in the Ocean Springs, MS area.</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="img/weather.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Weather App</b></p>
+                    <p>Retrieve real time weather information for any location in the world.</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="img/feedreader.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Jasmine Test Suite</b></p>
+                    <p>Sample Jasmine TDD suite for a feed reading application.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-third w3-container">
+                <img src="img/frogger.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Frogger</b></p>
+                    <p>The classic arcade game brought to your PC.</p>
+                </div>
+            </div>
+            <div class="w3-third w3-container">
+                <img src="img/pam.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Pixel Art Maker</b></p>
+                    <p>Show your creativity with this HTML canvas driven app.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+            <h4 id="aboutMe"><b>About Me</b></h4>
+            <p>I am a developer with experience in both front and back end development. I am very passionate about
+                coding and have a strong desire to turn this into a career. I love the process of creating new apps and
+                tackling the worst bugs head on. If you need someone to bring passion and value to your project, I am
+                the guy.</p>
+            <hr>
+
+            <h4>Technical Skills</h4>
+            <i class="fab fa-html5 fa-4x"></i>
+            <i class="fab fa-css3-alt fa-4x"></i>
+            <i class="fab fa-js-square fa-4x"></i>
+            <i class="fab fa-node fa-4x"></i>
+            <i class="fab fa-bootstrap fa-4x"></i>
+            <i class="fab fa-npm fa-4x"></i>
+            <i class="fab fa-vuejs fa-4x"></i>
+            <i class="fab fa-git fa-4x"></i>
+            <i class="fas fa-database fa-4x"></i>
+
+            <div>
+                <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                    <i class="fa fa-download w3-margin-right"></i>Download Resume
+                </button>
+            </div>
+
+
+            <hr>
+
+
+
+            <!-- Contact Section -->
+            <div class="w3-container w3-padding-large w3-grey">
+                <h4 id="contact"><b>Contact Me</b></h4>
+                <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+                    <div class="w3-third w3-dark-grey">
+                        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                        <p>RyanWadeDevelopment@gmail.com</p>
+                    </div>
+                    <div class="w3-third w3-teal">
+                        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                        <p>Ocean Springs, MS</p>
+                    </div>
+                    <div class="w3-third w3-dark-grey">
+                        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                        <p>(228)-313-2744</p>
+                    </div>
+                </div>
+                <hr class="w3-opacity">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-black w3-margin-bottom"><i
+                            class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+                </form>
+            </div>
+
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-32 w3-black">
+                <a href="#portfolio">Back to top</a>
+            </footer>
+
+
+
+            <!-- End page content -->
+        </div>
+
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>

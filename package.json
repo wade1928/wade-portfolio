@@ -1,0 +1,17 @@
+{
+  "name": "wade-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Ryan W Wade",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2"
+  }
+}
