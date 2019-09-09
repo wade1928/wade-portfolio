@@ -193,9 +193,15 @@
 
 
             <div>
-                <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-                    <i class="fa fa-download w3-margin-right"></i>Download Resume
-                </button>
+                <form method="GET" action="rwResume.docx">
+                    <button type="submit"
+                        class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                        <i class="fa fa-download w3-margin-right"></i>Download Resume
+                    </button>
+                </form>
+
+
+
             </div>
 
 
@@ -221,7 +227,7 @@
                     </div>
                 </div>
                 <hr class="w3-opacity">
-                <form action="/action_page.php" target="_blank">
+                <form action="mailto:ryanwadedevelopment@gmail.com" method="post" enctype="text/plain" target="_blank">
                     <div class="w3-section">
                         <label>Name</label>
                         <input class="w3-input w3-border" type="text" name="Name" required>
